@@ -1,4 +1,3 @@
 def prime?(int)
-  int = (-1..500000).to_a
-  int.any? { |i| i % 1 && i == 0 }
+  !(2..n-1).detect{|x| n%x == 0}
 end
