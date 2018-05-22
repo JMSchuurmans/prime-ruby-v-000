@@ -1,7 +1,9 @@
-def prime?(int)
+def prime?(number)
   if number >= 2
-    !(2..int-1).detect{|x| int%x == 0}
+    (2..number - 1).all? do |x|
+      number % x != 0
+    end
   else
-    false
+    return false
   end
 end
