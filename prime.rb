@@ -3,4 +3,5 @@ def prime?(int)
   int.any? { |i| i % 1 && i }
     unless i < 2
       false
+  end
 end
